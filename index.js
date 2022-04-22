@@ -66,12 +66,6 @@ const questions = [
         message: "Add your GitHub username: ",
     },
 ];
-// Testing readme creation, remove ; above and add ) after ] to use this
-    // .then((answers) => {
-    //     const generateReadMe = generateMarkdown(answers);
-
-    //     fs.writeFile('README.md', generateReadMe, )
-    // });
 
 // TODO: Create a function to write README file
 // Example from class:
