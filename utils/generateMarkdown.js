@@ -15,7 +15,7 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   if (license !== "None") {
     return (
-      `(https://opensource.org/licenses/${license})`
+      `https://opensource.org/licenses/${license}`
     )
   }
   return ''
@@ -26,8 +26,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license !== "None") {
     return (
-      `## License
-      This app is protected under the ${license} license.`
+      `## License\nThis app is protected under the ${license} license.`
     )
   }
   return ''
@@ -57,7 +56,9 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ${renderLicenseSection(data.license)}
+  
   ${renderLicenseBadge(data.license)}
+
   ${renderLicenseLink(data.license)}
 
 
